@@ -22,3 +22,27 @@ warn Dumper unique_substrings('abcd', 'abde');
 #                       'abcd'
 #                     ]
 #         };
+
+warn Dumper unique_substrings('abcd', 'abde', 'abdf');
+# $VAR1 = {
+#           'abde' => [
+#                       'e',
+#                       'de',
+#                       'bde',
+#                       'abde'
+#                     ],
+#           'abdf' => [
+#                       'f',
+#                       'df',
+#                       'bdf',
+#                       'abdf'
+#                     ],
+#           'abcd' => [
+#                       'c',
+#                       'cd',
+#                       'bc',
+#                       'abc',
+#                       'bcd',
+#                       'abcd'
+#                     ]
+#         };
