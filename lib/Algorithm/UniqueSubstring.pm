@@ -21,7 +21,6 @@ sub unique_substrings {
         }
     }
 
-    use YAML; warn YAML::Dump $root;
     return _scan_trie($root);
 }
 
